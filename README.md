@@ -25,8 +25,5 @@ import the database file named foodfun.sql present in folder database
 ![Screenshot (97)](https://user-images.githubusercontent.com/38497682/54449769-e4af8f80-4774-11e9-8ec9-8c356f0be0ca.png)
 
 
-![Screenshot (98)](https://user-images.githubusercontent.com/38497682/54449778-e7aa8000-4774-11e9-8633-366f371ed863.png)
-
-
 ![Screenshot (99)](https://user-images.githubusercontent.com/38497682/54449808-f729c900-4774-11e9-9fe0-c1133292ab90.png)
 
