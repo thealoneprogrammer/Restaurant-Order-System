@@ -1,16 +1,22 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 12, 2019 at 08:33 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.2.4
+-- Generation Time: Mar 15, 2019 at 05:51 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.2
+
+/*********************************************/
+--        Created by Sujith D                --
+--        email:-sujithsuji1098@gmail.com    --
+/********************************************/
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -68,7 +74,7 @@ INSERT INTO `category` (`cat_id`, `cat_name`) VALUES
 --
 
 CREATE TABLE `cookcart` (
-  `cook_id` int(11) NOT NULl,
+  `cart_id` int(11) NOT NULL,
   `cat_id` int(11) DEFAULT NULL,
   `food_id` int(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
@@ -175,7 +181,8 @@ ALTER TABLE `category`
 -- Indexes for table `cookcart`
 --
 ALTER TABLE `cookcart`
-  ADD KEY `cook_id` (`cook_id`),
+  ADD PRIMARY KEY (`cart_id`),
+  ADD KEY `cook_id` (`cart_id`),
   ADD KEY `user_id` (`user_id`);
 
 --
@@ -207,7 +214,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `foods`
@@ -219,7 +226,7 @@ ALTER TABLE `foods`
 -- AUTO_INCREMENT for table `managercart`
 --
 ALTER TABLE `managercart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
